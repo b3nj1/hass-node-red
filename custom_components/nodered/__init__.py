@@ -138,7 +138,7 @@ class NodeRedEntity(Entity):
         return self._config.get(CONF_ICON)
 
     @property
-    def unit_of_measurement(self) -> Optional[str]:
+    def native_unit_of_measurement(self) -> Union[str, None]:
         """Return the unit this state is expressed in."""
         return self._config.get(CONF_UNIT_OF_MEASUREMENT)
 
